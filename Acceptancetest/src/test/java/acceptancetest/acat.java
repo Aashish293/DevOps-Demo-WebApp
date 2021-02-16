@@ -19,8 +19,8 @@ public class acat {
 	
 	@Test(priority = 0)
 	public void checkin() {
-		driver = new HtmlUnitDriver();
-		//driver= new FirefoxDriver();
+		//driver = new HtmlUnitDriver();
+		driver= new FirefoxDriver();
 		wait = new WebDriverWait(driver, 10);
 		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
