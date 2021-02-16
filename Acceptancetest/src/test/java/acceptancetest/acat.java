@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class acat {
-	//public HtmlUnitDriver driver;
-	public WebDriver driver;
+	public HtmlUnitDriver driver;
+	//public WebDriver driver;
 	public WebDriverWait wait;
 	public String URL = "http://3.128.247.200:8080/ProdWebapp";
 	public String URL1 = "http://3.128.247.200:8080/ProdWebapp/avncreatepage.jsp";
@@ -19,8 +19,8 @@ public class acat {
 	
 	@Test(priority = 0)
 	public void checkin() {
-		//driver = new HtmlUnitDriver();
-		driver= new FirefoxDriver();
+		driver = new HtmlUnitDriver();
+		//driver= new FirefoxDriver();
 		wait = new WebDriverWait(driver, 10);
 		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
